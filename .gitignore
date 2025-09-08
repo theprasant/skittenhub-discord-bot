@@ -1,0 +1,15 @@
+node_modules
+.env
+.gemini.env
+package-lock.json
+.vscode
+/target
+.shuttle-storage
+Secrets*.toml
+!Secrets.example.toml
+.shuttle*
+
+#others
+/test
+todo
+/playground

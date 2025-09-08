@@ -1,0 +1,13 @@
+{
+  "apps": [
+    {
+      "name": "skittenhub",
+      "script": "./index.js",
+      "interpreter": "node",
+      "watch": true,
+      "env": {
+        "NODE_ENV": "development"
+      }
+    }
+  ]
+}

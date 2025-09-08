@@ -1,0 +1,53 @@
+{
+  "name": "skittenhub",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A discord bot for who knows what",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "pm2dev": "pm2 start npm --name skittenhub -- run dev",
+    "pm2start": "pm2 start npm --name skittenhub -- start",
+    "deploy": "node deploy.js global",
+    "deploylocal": "node deploy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theprasant/skittenhub-discord-bot.git"
+  },
+  "keywords": [
+    "skittenhub",
+    "discordbot"
+  ],
+  "author": "theprasant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theprasant/skittenhub-discord-bot/issues"
+  },
+  "homepage": "https://github.com/theprasant/skittenhub-discord-bot#readme",
+  "dependencies": {
+    "@discordjs/voice": "^0.18.0",
+    "@google/genai": "^1.8.0",
+    "@skyra/gifenc": "^1.0.1",
+    "acorn": "^8.15.0",
+    "canvas": "^3.1.2",
+    "cheerio": "^1.1.0",
+    "discord.js": "^14.21.0",
+    "express": "^5.1.0",
+    "ffmpeg": "^0.0.4",
+    "ffmpeg-static": "^5.2.0",
+    "google-tts-api": "^2.0.2",
+    "gsap": "^3.13.0",
+    "gtts": "^0.2.1",
+    "pm2": "^6.0.8",
+    "puppeteer": "^24.14.0",
+    "stream-buffers": "^3.0.3",
+    "user-agents": "^1.1.608",
+    "ytdl-core": "^4.11.5"
+  },
+  "devDependencies": {
+    "dotenv": "^17.0.1",
+    "nodemon": "^3.1.10"
+  }
+}
