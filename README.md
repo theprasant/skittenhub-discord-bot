@@ -50,7 +50,10 @@ SkittenHub is an AI-powered Discord bot that automates tasks and enhances your s
 	- `guildId`: Your server ID (required only if you want to deploy the slash commands only in your server)
 	- `codeLog` and `errorLog`: guild and channel ID for logging the generated coode and errors respectively
 	- `allowedGuilds`: List of IDs of guilds you allow to use the `.s cmd` and `/cmd` command. Set `allowedGuilds` as an empty array to allow in all guilds.
-5. **Deploy the bot**
+5. **Puppeteer Browser Support** (optional, risky)
+	- Uncomment the browser key in the context variable in the autoGeminiExecute function of `helpers/autoGemini.js` to enable puppeteer browser support.
+	> Enabling this too risky, as the users can access your browser through it, even being able to view the contennts of filees and folders outside of the restricted folder. So, do this only if you know what you're doing.
+6. **Deploy the bot**
 	- To deploy globally:
 	```pwsh
 	npm run deploy
@@ -59,7 +62,7 @@ SkittenHub is an AI-powered Discord bot that automates tasks and enhances your s
 	```pwsh
 	npm run deploylocal
 	```
-4. **Start the bot**
+7. **Start the bot**
 	 - Development mode (auto-restart):
 		 ```pwsh
 		 npm run dev
