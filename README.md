@@ -50,7 +50,6 @@ SkittenHub is an AI-powered Discord bot that automates tasks and enhances your s
 	- `guildId`: Your server ID (required only if you want to deploy the slash commands only in your server)
 	- `codeLog` and `errorLog`: guild and channel ID for logging the generated coode and errors respectively
 	- `allowedGuilds`: List of IDs of guilds you allow to use the `.s cmd` and `/cmd` command. Set `allowedGuilds` as an empty array to allow in all guilds.
-	- Create a new folder with name `playground` at the root of the project. It will be used to store temporary files. (risky, optional, only add if your use case needs it and the bot doesn't have too many users)
 5. **Deploy the bot**
 	- To deploy globally:
 	```pwsh

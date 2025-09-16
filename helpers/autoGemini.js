@@ -147,8 +147,8 @@ const url = googleTTS.getAudioUrl('হ্যালো', {
 });
 
 googleTTS.getAudioUrl is a synchonous function, so don't use .then(), directly use it to get the url.
-If you need to create audio file and save to play in voice channel,save that it in ${restrictedDir}/vcaudio directory and delete the file after playing it.
-If the text is too long, split it into chunks of 200 characters and convert each chunk to audio file, create a separate folder for them inside ${restrictedDir}/vcaudio and play them one by one, and delete the files and the folder after playing or sending them.
+If you need to create audio file and save to play in voice channel, create a new folder inside ${restrictedDir} directory, save it inside the folder and delete the file and folder after playing it.
+If the text is too long, split it into chunks of 200 characters and convert each chunk to audio file, create a separate folder for them inside ${restrictedDir} and play them one by one, and delete the files and the folder after playing or sending them.
 If someone asks you to visit a URL, or take screenshot or something similar, use the puppeteer's browser instance provided in the context to visit the URL and take screenshot or whatever is needed.
 if user mean any browser related terms, they are talking of puppeteer's browser instance, so use the browser instance provided in the context to perform the actions.
 If you ever have to create a messageCreate event, write the code to ignore messages of bots and yourself. DON'T SPAM. DON'T GENERATE PLAIN TEXT, ONLY GENERATE EXECUTABLE CODE. DON'T PERFORM ANY CROSS-GUILD ACTIONS, NOT EVEN SENDING MESSAGE. DON'T REVEAL INFO OF OTHER GUILDS. Don't use await and require statement outside functions.
